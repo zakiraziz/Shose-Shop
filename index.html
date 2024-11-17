@@ -1,47 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grand Shoe Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
 </head>
+
 <body>
-    
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Grand Shoe Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+            </div>
         </div>
-      </nav>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-white py-5">
+        <div class="container">
+            <h1>Step into Style with Our Premium Collection</h1>
+            <p class="lead">Find shoes for every occasion – Comfort, Luxury, and Fashion all in one place.</p>
+            <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Collection</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Product Cards -->
+                <div class="col">
+                    <div class="card shadow-lg">
+                        <img src="https://cdn.thewirecutter.com/wp-content/media/2023/09/running-shoes-2048px-5960.jpg" class="card-img-top" alt="Running Shoes">
+                        <div class="card-body">
+                            <h5 class="card-title">Running Shoes</h5>
+                            <p class="card-text">High-performance shoes designed for speed and comfort.</p>
+                            <button class="btn btn-outline-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-lg">
+                        <img src="https://www.devoguestore.com/cdn/shop/products/image_30bb6b35-1603-4ed9-b2f5-ad6377ebb687.jpg?v=16712181010" class="card-img-top" alt="Casual Shoes">
+                        <div class="card-body">
+                            <h5 class="card-title">Casual Shoes</h5>
+                            <p class="card-text">Comfortable and stylish for everyday wear.</p>
+                            <button class="btn btn-outline-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-lg">
+                        <img src="https://s.alicdn.com/@sc04/kf/Hfa9ba617b6494f9b8ce524af5ba2c4671.jpg_720x720q50.jpg" class="card-img-top" alt="Luxury Shoes">
+                        <div class="card-body">
+                            <h5 class="card-title">Luxury Shoes</h5>
+                            <p class="card-text">Exclusive designs with luxurious finishes for that special occasion.</p>
+                            <button class="btn btn-outline-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-lg">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-oOb5SbSdi74KjRphfeYj7gLarEAhCltfiQ&s" class="card-img-top" alt="Luxury Shoes">
+                        <div class="card-body">
+                            <h5 class="card-title">kids shose</h5>
+                            <p class="card-text">Exclusive designs with luxurious finishes for that special occasion.</p>
+                            <button class="btn btn-outline-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                        <div class="col">
+                            <div class="card shadow-lg">
+                                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/0/c/3/6-rng-854-grey-40-bruton-grey-original-imah3xh6a6ecvmng.jpeg?q=90&crop=false" class="card-img-top" alt="Luxury Shoes">
+                                <div class="card-body">
+                                    <h5 class="card-title">sprts shose</h5>
+                                    <p class="card-text">Exclusive designs with luxurious finishes for that special occasion.</p>
+                                    <button class="btn btn-outline-primary add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                                <div class="col">
+                                    <div class="card shadow-lg">
+                                        <img src="https://contents.mediadecathlon.com/p2679080/k$75b2e9288186ae61a0bfbd7d646d883f/men-s-football-shoes-puma-future-7-play-fg-ag-black-puma-8918270.jpg?f=1920x0&format=auto" class="card-img-top" alt="Luxury Shoes">
+                                        <div class="card-body">
+                                            <h5 class="card-title">footBall shose</h5>
+                                            <p class="card-text">Exclusive designs with luxurious finishes for that special occasion.</p>
+                                            <button class="btn btn-outline-primary add-to-cart">Add to Cart</button>
+                                        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discount Banner -->
+    <section class="discount-banner bg-primary text-white text-center py-4">
+        <div class="container">
+            <h3>Exclusive Offer: 20% Off on All Orders! Use Code: SHOE20</h3>
+            <a href="#" class="btn btn-light btn-lg">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Customer Reviews</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="review-card text-center p-3 shadow-lg">
+                        <p>"Absolutely love these shoes! They’re super comfortable and stylish."</p>
+                        <h5>- John D.</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="review-card text-center p-3 shadow-lg">
+                        <p>"Perfect fit and excellent quality. Will definitely buy again."</p>
+                        <h5>- Sarah W.</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="review-card text-center p-3 shadow-lg">
+                        <p>"Amazing service and the shoes are beyond expectations. Highly recommended!"</p>
+                        <h5>- Emily K.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Grand Shoe Shop. All Rights Reserved.</p>
+        <p>Follow us on social media: <a href="#" class="text-white">Instagram</a> | <a href="#" class="text-white">Facebook</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> <!-- External JavaScript -->
 </body>
+
 </html>

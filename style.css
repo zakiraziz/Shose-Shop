@@ -1,0 +1,78 @@
+/* styles.css */
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.hero-section {
+    background-image: url('https://via.placeholder.com/1600x600?text=Shop+Shoes+Now');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.card {
+    border-radius: 15px;
+    border: none;
+}
+
+.card img {
+    border-radius: 15px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.add-to-cart {
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.discount-banner {
+    background-color: #f9c74f;
+}
+
+.reviews .review-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.footer {
+    background-color: #212529;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+}
