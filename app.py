@@ -8,3 +8,12 @@ products = [
     {"id": 2, "name": "Casual Shoes", "description": "Stylish and comfortable for everyday wear.", "price": 40},
     {"id": 3, "name": "Luxury Shoes",}
 ]
+products = [
+    {"id": 1, "name": "Running Shoes", "description": "High-performance shoes for speed and comfort.", "price": 50},
+    {"id": 2, "name": "Casual Shoes", "description": "Stylish and comfortable for everyday wear.", "price": 40},
+    {"id": 3, "name": "Luxury Shoes", "description": "Exclusive designs with luxurious finishes.", "price": 100}
+]
+
+@app.route('/')
+def index():
+    return render_template('index.html', products=products)
