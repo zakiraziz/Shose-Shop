@@ -150,7 +150,22 @@
             </div>
         </div>
     </section>
-
+    <div class="row">
+        {% for product in products %}
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ product.image_url }}" alt="{{ product.name }}" class="card-img-top">
+                <div class="card-body">
+                    <h5>{{ product.name }}</h5>
+                    <p>{{ product.description }}</p>
+                    <p>Price: ${{ product.price }}</p>
+                    <button class="btn btn-outline-primary add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
     <!-- Footer -->
     <footer class="footer bg-dark text-white text-center py-4">
         <p>&copy; 2024 Grand Shoe Shop. All Rights Reserved.</p>
