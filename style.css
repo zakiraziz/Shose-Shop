@@ -7,9 +7,9 @@ body {
 }
 
 .hero-section {
-    background-image: url('https://via.placeholder.com/1600x600?text=Shop+Shoes+Now');
+    background: linear-gradient(to right, #ff7e5f, #feb47b), url('https://via.placeholder.com/1600x600?text=Shop+Shoes+Now');
     background-size: cover;
-    background-position: center;
+    background-blend-mode: overlay;
     color: white;
     padding: 100px 0;
 }
@@ -75,4 +75,22 @@ body {
     .hero-section p {
         font-size: 1rem;
     }
+}
+
+.btn {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer a {
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ff7e5f;
 }
