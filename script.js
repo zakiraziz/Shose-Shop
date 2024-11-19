@@ -3,7 +3,7 @@ const params = new URLSearchParams(window.location.search);
 const shoeName = params.get('name');
 
 const shoeData = {
-    'running-shoes': {
+    'running-shoes': { 
         title: 'Running Shoes',
         description: 'High-performance shoes designed for speed and comfort.',
         price: '$120',
