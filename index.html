@@ -10,87 +10,164 @@
 </head>
 
 <body>
-    <!-- Featured Products Section -->
-    <section class="featured-products py-5">
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="logo mb-0">Shoe<span class="text-primary">Store</span></h1>
+            <nav>
+                <a href="#" class="text-white me-4">Home</a>
+                <a href="#" class="text-white me-4">Products</a>
+                <a href="#ending" class="text-white">Ending</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero py-5 text-center text-white" style="background: url('https://via.placeholder.com/1920x400?text=Hero+Image') center/cover no-repeat;">
         <div class="container">
-            <h2 class="text-center mb-4 display-3 font-weight-bold">Featured Collection</h2>
+            <h2 class="display-4 fw-bold">Find Your Perfect Shoes</h2>
+            <p class="lead">Explore our wide range of stylish and comfortable footwear.</p>
+            <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="featured-products py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Collection</h2>
             <div class="row g-4">
                 <!-- Running Shoes -->
                 <div class="col-md-4">
-                    <div class="card shadow-lg border-0 rounded-4">
+                    <div class="card shadow">
                         <a href="product.html?name=running-shoes">
-                            <img src="https://cdn.thewirecutter.com/wp-content/media/2023/09/running-shoes-2048px-5960.jpg"
-                                class="card-img-top" alt="Running Shoes">
+                            <img src="https://cdn.thewirecutter.com/wp-content/media/2023/09/running-shoes-2048px-5960.jpg" class="card-img-top" alt="Running Shoes">
                         </a>
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Running Shoes</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Running Shoes</h5>
                             <p class="card-text">High-performance shoes designed for speed and comfort.</p>
-                        </div>
-                        <div class="card-footer text-muted">
-                            <small>Last updated 3 mins ago</small>
+                            <a href="product.html?name=running-shoes" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Casual Shoes -->
                 <div class="col-md-4">
-                    <div class="card shadow-lg border-0 rounded-4">
+                    <div class="card shadow">
                         <a href="product.html?name=casual-shoes">
-                            <img src="https://www.devoguestore.com/cdn/shop/products/image_30bb6b35-1603-4ed9-b2f5-ad6377ebb687.jpg?v=16712181010"
-                                class="card-img-top" alt="Casual Shoes">
+                            <img src="https://www.devoguestore.com/cdn/shop/products/image_30bb6b35-1603-4ed9-b2f5-ad6377ebb687.jpg?v=16712181010" class="card-img-top" alt="Casual Shoes">
                         </a>
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Casual Shoes</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Casual Shoes</h5>
                             <p class="card-text">Comfortable and stylish for everyday wear.</p>
-                        </div>
-                        <div class="card-footer text-muted">
-                            <small>Last updated 5 mins ago</small>
+                            <a href="product.html?name=casual-shoes" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Luxury Shoes -->
                 <div class="col-md-4">
-                    <div class="card shadow-lg border-0 rounded-4">
+                    <div class="card shadow">
                         <a href="product.html?name=luxury-shoes">
-                            <img src="https://s.alicdn.com/@sc04/kf/Hfa9ba617b6494f9b8ce524af5ba2c4671.jpg_720x720q50.jpg"
-                                class="card-img-top" alt="Luxury Shoes">
+                            <img src="https://s.alicdn.com/@sc04/kf/Hfa9ba617b6494f9b8ce524af5ba2c4671.jpg_720x720q50.jpg" class="card-img-top" alt="Luxury Shoes">
                         </a>
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Luxury Shoes</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Luxury Shoes</h5>
                             <p class="card-text">Exclusive designs with luxurious finishes for special occasions.</p>
-                        </div>
-                        <div class="card-footer text-muted">
-                            <small>Last updated    10 mins ago</small>
+                            <a href="product.html?name=luxury-shoes" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Product Detail Page -->
-    <div class="container py-5">
-        <h1 class="text-center display-4" id="shoe-title">Shoe Details</h1>
-        <div class="row mt-4">
-            <!-- Main Image -->
-            <div class="col-md-6">
-                <img id="main-image" src="" class="img-fluid rounded-4 shadow-lg" alt="Shoe Image">
-            </div>
-            <!-- Shoe Details -->
-            <div class="col-md-6">
-                <h2 id="shoe-name" class="text-primary">Shoe Name</h2>
-                <p id="shoe-description" class="lead">Description of the shoe goes here.</p>
-                <h3 id="shoe-price" class="display-5">$0.00</h3>
-                <button class="btn btn-lg btn-success" id="add-to-cart">Add to Cart</button>
+        <div class="col-md-4">
+            <div class="card shadow">
+                <a href="product.html?name=casual-shoes">
+                    <img src="https://www.skechers.com/dw/image/v2/BDCN_PRD/on/demandware.static/-/Library-Sites-SkechersSharedLibrary/default/dw88f3e6e6/images/2024-Images/Q2/SKX62403%20Shop%20by%20Style%20Grid%20Environmental%20Shots%20Spring-Summer%202024_Womens_750x664-Athletic%20Sneakers%20150116GYMT.jpg" class="card-img-top" alt="Casual Shoes">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">skechers shoes</h5>
+                    <p class="card-text">Comfortable and stylish for everyday wear.</p>
+                    <a href="product.html?name=casual-shoes" class="btn btn-primary">View Details</a>
+                </div>
             </div>
         </div>
+        <div class="col-md-4">
+            <div class="card shadow">
+                <a href="product.html?name=casual-shoes">
+                    <img src="https://affinity.com.pk/cdn/shop/products/image_17182d0c-fdc3-4765-9736-62ab7a642420_2048x.heic?v=1659053565" class="card-img-top" alt="Casual Shoes">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Walk Shoes</h5>
+                    <p class="card-text">Comfortable and stylish for everyday wear.</p>
+                    <a href="product.html?name=casual-shoes" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow">
+                <a href="product.html?name=casual-shoes">
+                    <img src="https://m.media-amazon.com/images/I/61HfMLBKFUL._AC_.jpg" class="card-img-top" alt="Casual Shoes">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">hiking shoes</h5>
+                    <p class="card-text">Comfortable and stylish for everyday wear.</p>
+                    <a href="product.html?name=casual-shoes" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow">
+                <a href="product.html?name=casual-shoes">
+                    <img src="https://runnershighlb.com/cdn/shop/files/LARGE-HOKA_F23_W_GAV5_ABSO_DTL_JL_L4377_f449df5f-2eda-43fe-9bdd-d871d0cb2c63.jpg?v=1696709020&width=2000" class="card-img-top" alt="Casual Shoes">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Hako Shoes</h5>
+                    <p class="card-text">Comfortable and stylish for everyday wear.</p>
+                    <a href="product.html?name=casual-shoes" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow">
+                <a href="product.html?name=casual-shoes">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYFMssxdmjHzZTpzhtVh2vPMaBmKw4BI66JQ&s" class="card-img-top" alt="Casual Shoes">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">sperry shoes</h5>
+                    <p class="card-text">Comfortable and stylish for everyday wear.</p>
+                    <a href="product.html?name=casual-shoes" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow">
+                <a href="product.html?name=casual-shoes">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj8pjz5ZlfjPDwOAUfoIn8buE4fO2YAIcv8A&s" class="card-img-top" alt="Casual Shoes">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">clark shoes</h5>
+                    <p class="card-text">Comfortable and stylish for everyday wear.</p>
+                    <a href="product.html?name=casual-shoes" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h3 class="mt-5 display-6">Gallery</h3>
-        <div class="row" id="gallery"></div>
-    </div>
+    <!-- Ending Page -->
+    <section id="ending" class="ending-page py-5 text-center text-white" style="background-color: #333;">
+        <div class="container">
+            <h2 class="display-4 fw-bold">Thank You for Visiting ShoeStore!</h2>
+            <p class="lead">We hope to see you again soon.</p>
+            <a href="#" class="btn btn-light btn-lg mt-3">Back to Top</a>
+        </div>
+        
 
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 ShoeStore. All Rights Reserved.</p>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
