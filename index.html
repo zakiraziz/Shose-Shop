@@ -4,162 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoe Store</title>
+    <title>Shoe Store | Find Your Perfect Fit</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- Header -->
-    <header class="bg-dark text-white py-3">
+    <header class="bg-dark text-white py-3 sticky-top shadow-sm">
         <div class="container d-flex justify-content-between align-items-center">
             <h1 class="logo mb-0">Shoe<span class="text-primary">Store</span></h1>
             <nav>
-                <a href="#" class="text-white me-4">Home</a>
-                <a href="#" class="text-white me-4">Products</a>
-                <a href="#ending" class="text-white">Ending</a>
+                <a href="#" class="nav-link text-white me-4">Home</a>
+                <a href="#products" class="nav-link text-white me-4">Products</a>
+                <a href="#ending" class="nav-link text-white">Ending</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero py-5 text-center text-white" style="background: url('https://via.placeholder.com/1920x400?text=Hero+Image') center/cover no-repeat;">
-        <div class="container">
+    <section class="hero text-center text-white d-flex align-items-center justify-content-center" style="background: url('https://via.placeholder.com/1920x400?text=Hero+Image') center/cover no-repeat; height: 400px;">
+        <div>
             <h2 class="display-4 fw-bold">Find Your Perfect Shoes</h2>
             <p class="lead">Explore our wide range of stylish and comfortable footwear.</p>
             <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
         </div>
     </section>
 
-    <!-- Featured Products Section -->
-    <section id="products" class="featured-products py-5">
+    <!-- Image Carousel -->
+    <section id="carousel" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Featured Collection</h2>
+            <h2 class="text-center mb-5 text-uppercase">Best Sellers</h2>
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/1200x400?text=Best+Seller+1" class="d-block w-100" alt="Shoe 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1200x400?text=Best+Seller+2" class="d-block w-100" alt="Shoe 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1200x400?text=Best+Seller+3" class="d-block w-100" alt="Shoe 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Masonry Grid -->
+    <section id="grid" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5 text-uppercase">Explore More</h2>
             <div class="row g-4">
-                <!-- Running Shoes -->
                 <div class="col-md-4">
-                    <div class="card shadow">
-                        <a href="product.html?name=running-shoes">
-                            <img src="https://cdn.thewirecutter.com/wp-content/media/2023/09/running-shoes-2048px-5960.jpg" class="card-img-top" alt="Running Shoes">
-                        </a>
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Running Shoes</h5>
-                            <p class="card-text">High-performance shoes designed for speed and comfort.</p>
-                            <a href="product.html?name=running-shoes" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
+                    <img src="https://via.placeholder.com/400x600?text=Shoe+1" class="img-fluid rounded shadow" alt="Shoe 1">
                 </div>
-
                 <div class="col-md-4">
-                    <div class="card shadow">
-                        <a href="product.html?name=casual-shoes">
-                            <img src="https://www.devoguestore.com/cdn/shop/products/image_30bb6b35-1603-4ed9-b2f5-ad6377ebb687.jpg?v=16712181010" class="card-img-top" alt="Casual Shoes">
-                        </a>
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Casual Shoes</h5>
-                            <p class="card-text">Comfortable and stylish for everyday wear.</p>
-                            <a href="product.html?name=casual-shoes" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
+                    <img src="https://via.placeholder.com/400x400?text=Shoe+2" class="img-fluid rounded shadow" alt="Shoe 2">
                 </div>
-
-                <!-- Luxury Shoes -->
                 <div class="col-md-4">
-                    <div class="card shadow">
-                        <a href="product.html?name=luxury-shoes">
-                            <img src="https://s.alicdn.com/@sc04/kf/Hfa9ba617b6494f9b8ce524af5ba2c4671.jpg_720x720q50.jpg" class="card-img-top" alt="Luxury Shoes">
-                        </a>
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Luxury Shoes</h5>
-                            <p class="card-text">Exclusive designs with luxurious finishes for special occasions.</p>
-                            <a href="product.html?name=luxury-shoes" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card shadow">
-                <a href="product.html?name=casual-shoes">
-                    <img src="https://www.skechers.com/dw/image/v2/BDCN_PRD/on/demandware.static/-/Library-Sites-SkechersSharedLibrary/default/dw88f3e6e6/images/2024-Images/Q2/SKX62403%20Shop%20by%20Style%20Grid%20Environmental%20Shots%20Spring-Summer%202024_Womens_750x664-Athletic%20Sneakers%20150116GYMT.jpg" class="card-img-top" alt="Casual Shoes">
-                </a>
-                <div class="card-body text-center">
-                    <h5 class="card-title">skechers shoes</h5>
-                    <p class="card-text">Comfortable and stylish for everyday wear.</p>
-                    <a href="product.html?name=casual-shoes" class="btn btn-primary">View Details</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card shadow">
-                <a href="product.html?name=casual-shoes">
-                    <img src="https://affinity.com.pk/cdn/shop/products/image_17182d0c-fdc3-4765-9736-62ab7a642420_2048x.heic?v=1659053565" class="card-img-top" alt="Casual Shoes">
-                </a>
-                <div class="card-body text-center">
-                    <h5 class="card-title">Walk Shoes</h5>
-                    <p class="card-text">Comfortable and stylish for everyday wear.</p>
-                    <a href="product.html?name=casual-shoes" class="btn btn-primary">View Details</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card shadow">
-                <a href="product.html?name=casual-shoes">
-                    <img src="https://m.media-amazon.com/images/I/61HfMLBKFUL._AC_.jpg" class="card-img-top" alt="Casual Shoes">
-                </a>
-                <div class="card-body text-center">
-                    <h5 class="card-title">hiking shoes</h5>
-                    <p class="card-text">Comfortable and stylish for everyday wear.</p>
-                    <a href="product.html?name=casual-shoes" class="btn btn-primary">View Details</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card shadow">
-                <a href="product.html?name=casual-shoes">
-                    <img src="https://runnershighlb.com/cdn/shop/files/LARGE-HOKA_F23_W_GAV5_ABSO_DTL_JL_L4377_f449df5f-2eda-43fe-9bdd-d871d0cb2c63.jpg?v=1696709020&width=2000" class="card-img-top" alt="Casual Shoes">
-                </a>
-                <div class="card-body text-center">
-                    <h5 class="card-title">Hako Shoes</h5>
-                    <p class="card-text">Comfortable and stylish for everyday wear.</p>
-                    <a href="product.html?name=casual-shoes" class="btn btn-primary">View Details</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card shadow">
-                <a href="product.html?name=casual-shoes">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYFMssxdmjHzZTpzhtVh2vPMaBmKw4BI66JQ&s" class="card-img-top" alt="Casual Shoes">
-                </a>
-                <div class="card-body text-center">
-                    <h5 class="card-title">sperry shoes</h5>
-                    <p class="card-text">Comfortable and stylish for everyday wear.</p>
-                    <a href="product.html?name=casual-shoes" class="btn btn-primary">View Details</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card shadow">
-                <a href="product.html?name=casual-shoes">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj8pjz5ZlfjPDwOAUfoIn8buE4fO2YAIcv8A&s" class="card-img-top" alt="Casual Shoes">
-                </a>
-                <div class="card-body text-center">
-                    <h5 class="card-title">clark shoes</h5>
-                    <p class="card-text">Comfortable and stylish for everyday wear.</p>
-                    <a href="product.html?name=casual-shoes" class="btn btn-primary">View Details</a>
+                    <img src="https://via.placeholder.com/400x500?text=Shoe+3" class="img-fluid rounded shadow" alt="Shoe 3">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Lightbox Gallery -->
+    <section id="lightbox" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 text-uppercase">Gallery</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <a href="https://via.placeholder.com/800x800?text=Shoe+1" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                        <img src="https://via.placeholder.com/400x400?text=Shoe+1" class="img-fluid rounded shadow" alt="Shoe 1">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://via.placeholder.com/800x800?text=Shoe+2" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                        <img src="https://via.placeholder.com/400x400?text=Shoe+2" class="img-fluid rounded shadow" alt="Shoe 2">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://via.placeholder.com/800x800?text=Shoe+3" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                        <img src="https://via.placeholder.com/400x400?text=Shoe+3" class="img-fluid rounded shadow" alt="Shoe 3">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-labelledby="lightboxModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lightboxModalLabel">Image Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="#" id="lightboxImage" class="img-fluid" alt="Preview">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Ending Page -->
-    <section id="ending" class="ending-page py-5 text-center text-white" style="background-color: #333;">
+    <section id="ending" class="py-5 text-center text-white" style="background-color: #333;">
         <div class="container">
             <h2 class="display-4 fw-bold">Thank You for Visiting ShoeStore!</h2>
             <p class="lead">We hope to see you again soon.</p>
             <a href="#" class="btn btn-light btn-lg mt-3">Back to Top</a>
         </div>
-        
+    </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
