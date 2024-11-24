@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;  
+    scroll-behavior: smooth;
     background-color: #f8f9fa;
 }
 
@@ -252,4 +252,13 @@ footer p {
 #grid img:hover {
     transform: scale(1.05); /* Zoom effect on hover */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+.carousel-inner img{
+    height: 600px;
+    width: 500;
+}
+
+.col-md-4img{
+    width: 200px;
+    height: 200px;
 }
