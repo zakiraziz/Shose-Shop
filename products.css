@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Header */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: #212529; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.zakir{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* Container Styling */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+header .logo {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header .logo .text-primary {
+    color: #007bff; /* Blue color for 'Store' */
+}
+
+/* Navigation Links */
+header nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav .nav-link:hover {
+    color: #007bff; /* Blue hover effect */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+
+.store-name {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+}
+
+/* Product Section */
+.product-page {
+    padding: 50px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 30px;
+}
+
+.product-img img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #343a40;
+}
+
+.product-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 1.8rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.buy-btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buy-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 1rem;
+}

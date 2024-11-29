@@ -1,10 +1,53 @@
-from flask import Flask, render_template, request, redirect, url_for
+import pygame
+import sys
 
-app = Flask(__name__)
+# Initialize Pygame
+pygame.init()
 
-# Sample Products
-products = [
-    {"id": 1, "name": "Running Shoes", "description": "High-performance shoes for speed and comfort.", "price": 50},
-    {"id": 2, "name": "Casual Shoes", "description": "Stylish and comfortable for everyday wear.", "price": 40},
-    {"id": 3, "name": "Luxury Shoes",}
-]
+# Screen setup
+screen = pygame.display.set_mode((800, 600))
+pygame.display.set_caption("Ending Page")
+
+# Colors
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+
+# Font
+font = pygame.font.Font(None, 74)
+
+# Render text
+text = font.render("Game Over", True, WHITE)
+text_rect = text.get_rect(center=(400, 300))
+
+# Main loop
+running = True
+while running:
+    screen.fill(BLACK)
+    screen.blit(text, text_rect)
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    pygame.display.flip()
+
+pygame.quit()
+sys.exit()
+import turtle
+
+# Screen setup
+screen = turtle.Screen()
+screen.setup(width=800, height=600)
+screen.bgcolor("black")
+screen.title("Ending Page")
+
+# Drawing text
+pen = turtle.Turtle()
+pen.hideturtle()
+pen.color("white")
+pen.penup()
+pen.goto(0, 0)
+pen.write("The End", align="center", font=("Arial", 36, "bold"))
+
+# Wait before closing
+screen.mainloop()

@@ -1,0 +1,331 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #f8f9fa;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: #212529; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Container Styling */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+header .logo {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header .logo .text-primary {
+    color: #007bff; /* Blue color for 'Store' */
+}
+
+/* Navigation Links */
+header nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav .nav-link:hover {
+    color: #007bff; /* Blue hover effect */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+/* Header */
+.logo {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #222;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    font-size: 1.125rem;
+    padding: 10px 30px;
+}
+
+/* Carousel */
+.carousel-inner img {
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-indicators button {
+    background-color: #007bff;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Masonry Grid */
+#grid .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+#grid .col-md-4 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Lightbox Modal */
+.modal-content {
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal-header {
+    border-bottom: none;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.modal-body img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-light {
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    #grid .row {
+        gap: 10px;
+    }
+}
+
+/* Masonry Grid */
+#grid .row {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: center; /* Center items horizontally */
+    gap: 1rem; /* Add spacing between items */
+}
+
+#grid .col-md-4 {
+    flex: 1 1 calc(33.333% - 1rem); /* Three items per row */
+    max-width: calc(33.333% - 1rem); /* Prevent overflow */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #grid .col-md-4 {
+        flex: 1 1 calc(50% - 1rem); /* Two items per row on smaller screens */
+        max-width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 576px) {
+    #grid .col-md-4 {
+        flex: 1 1 100%; /* One item per row on small screens */
+        max-width: 100%;
+    }
+}
+
+#grid img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#grid img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+.carousel-inner img{
+    height: 600px;
+    width: 500;
+}
+
+.col-md-4img{
+    width: 200px;
+    height: 200px;
+}
