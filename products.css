@@ -173,3 +173,38 @@ footer {
     margin-top: 40px;
     font-size: 1rem;
 }
+
+.product-title:hover {
+    color: #007bff; /* Match the blue theme */
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .product-page {
+        padding: 20px 10px;
+    }
+}
+.zakir, header + h3 {
+    margin: 20px 0;
+    text-align: center;
+}
+footer p {
+    margin: 0;
+}
+a:hover {
+    color: #007bff;
+}
+a:hover {
+    color: #007bff;
+}
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    border-top: 2px solid #007bff;
+}
